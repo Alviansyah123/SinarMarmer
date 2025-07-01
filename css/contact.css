@@ -1,0 +1,69 @@
+/* contact.css - Kontak */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  color: #b2956c;
+}
+
+.container-contact {
+  margin-top: 50px !important;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact-section {
+  padding: 3rem 0;
+  margin-top: 50px;
+}
+
+.contact-section iframe {
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.contact-section form .form-control {
+  border-radius: 6px;
+}
+
+.contact-section button {
+  margin-top: 1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Tombol sesuai tema marmer */
+.btn-marmer {
+  background-color: #b2956c;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+}
+
+.btn-marmer:hover {
+  background-color: #a08254;
+  transform: translateY(-2px);
+}

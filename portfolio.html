@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lihat hasil pekerjaan kami dari berbagai proyek marmer di seluruh Indonesia."
+    />
+    <title>Portofolio | MarmerIndo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-custom shadow-sm mx-3 my-3 px-3 py-2"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-marmer" href="index.html"
+          >MarmerIndo</a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar top-bar"></span>
+          <span class="bar bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTopBtn" title="Kembali ke atas">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button (2 Kontak) -->
+    <div class="wa-floating-menu">
+      <button
+        class="wa-main-btn"
+        id="waMenuToggle"
+        title="Hubungi via WhatsApp"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </button>
+
+      <div class="wa-options" id="waContactOptions">
+        <a
+          href="https://wa.me/6281211460051"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 1
+        </a>
+        <a
+          href="https://wa.me/6285695221579"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 2
+        </a>
+      </div>
+    </div>
+
+    <!-- Portofolio -->
+    <section class="py-5" id="portofolio">
+      <div class="container-portfolio">
+        <h2 class="text-center mb-4">Portofolio Proyek</h2>
+        <hr
+          class="mx-auto mb-5"
+          style="
+            width: 80px;
+            height: 4px;
+            background-color: #b2956c;
+            opacity: 1;
+            border: none;
+          "
+        />
+        <p class="text-center text-muted mb-5">
+          Berikut adalah beberapa proyek unggulan yang telah kami selesaikan
+          untuk klien-klien di berbagai sektor, mulai dari residensial hingga
+          komersial.
+        </p>
+
+        <div class="row g-4">
+          <!-- Proyek 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm portfolio-card">
+              <img
+                src="img/proyek/pyk1.jpg"
+                class="card-img-top"
+                alt="Proyek Rumah Mewah"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rumah Mewah – Jakarta</h5>
+                <p class="card-text mb-2 text-muted small">
+                  Klien: Individu | Tahun: 2024
+                </p>
+                <p class="card-text">
+                  Proyek hunian privat dengan marmer Carrara untuk ruang tamu,
+                  dinding foyer, dan tangga utama, menciptakan kesan elegan dan
+                  klasik.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyek 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm portfolio-card">
+              <img
+                src="img/proyek/pyk2.jpg"
+                class="card-img-top"
+                alt="Hotel Bali"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hotel Bintang Lima – Bali</h5>
+                <p class="card-text mb-2 text-muted small">
+                  Klien: Properti Komersial | Tahun: 2023
+                </p>
+                <p class="card-text">
+                  Lobby hotel, lounge, dan area restoran menggunakan marmer
+                  lokal premium dengan finishing glossy untuk suasana tropis nan
+                  mewah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyek 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm portfolio-card">
+              <img
+                src="img/proyek/pyk3.jpg"
+                class="card-img-top"
+                alt="Kantor Modern"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kantor Modern – Surabaya</h5>
+                <p class="card-text mb-2 text-muted small">
+                  Klien: Perusahaan Swasta | Tahun: 2022
+                </p>
+                <p class="card-text">
+                  Penggunaan marmer Statuario untuk dinding utama, meja
+                  resepsionis, serta area tangga memberikan nuansa profesional
+                  dan eksklusif.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Brand -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold">MarmerIndo</h5>
+            <p class="small text-muted">
+              Penyedia & spesialis pemasangan marmer berkualitas di Indonesia.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-semibold">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-white-50 text-decoration-none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="#tentang" class="text-white-50 text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/products.html"
+                  class="text-white-50 text-decoration-none"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#layanan" class="text-white-50 text-decoration-none"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/portfolio.html"
+                  class="text-white-50 text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-white-50 text-decoration-none"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Hubungi Kami</h6>
+            <p class="small text-muted mb-1">
+              Email:
+              <a href="mailto:info@marmerindo.com" class="text-white-50"
+                >info@marmerindo.com</a
+              >
+            </p>
+            <p class="small text-muted mb-1">
+              Telepon:
+              <a href="tel:+628123456789" class="text-white-50"
+                >+62 812-3456-789</a
+              >
+            </p>
+            <p class="small text-muted">Jakarta, Indonesia</p>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25 mt-4" />
+
+        <div class="text-center small text-white-50">
+          &copy; 2025 <strong>MarmerIndo</strong>. Semua Hak Dilindungi.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

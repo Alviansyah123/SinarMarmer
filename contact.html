@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hubungi kami untuk pemesanan marmer, konsultasi proyek, atau pertanyaan lainnya."
+    />
+    <title>Kontak Kami | MarmerIndo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-custom shadow-sm mx-3 my-3 px-3 py-2"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-marmer" href="index.html"
+          >Sinar Marmer</a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar top-bar"></span>
+          <span class="bar bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Floating WhatsApp Button (2 Kontak) -->
+    <div class="wa-floating-menu">
+      <button
+        class="wa-main-btn"
+        id="waMenuToggle"
+        title="Hubungi via WhatsApp"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </button>
+
+      <div class="wa-options" id="waContactOptions">
+        <a
+          href="https://wa.me/6281211460051"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 1
+        </a>
+        <a
+          href="https://wa.me/6285695221579"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 2
+        </a>
+      </div>
+    </div>
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTopBtn" title="Kembali ke atas">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Kontak -->
+    <main class="flex-fill">
+      <section class="py-5">
+        <div class="container-contact">
+          <h1 class="text-center mb-4">Hubungi Kami</h1>
+          <hr
+            class="mx-auto mb-5"
+            style="
+              width: 80px;
+              height: 4px;
+              background-color: #b2956c;
+              opacity: 1;
+              border: none;
+            "
+          />
+          <form class="contact-form p-3 p-md-4 rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="nama" class="form-label fw-semibold">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Nama Anda"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="email@contoh.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label fw-semibold">Pesan</label>
+              <textarea
+                class="form-control"
+                id="pesan"
+                rows="4"
+                placeholder="Tulis pesan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-marmer px-4 py-2">
+                Kirim
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-4">
+            <h5>Informasi Kontak</h5>
+
+            <p><strong>Telepon 1:</strong> 081211460051</p>
+            <p><strong>Telepon 2:</strong> 085695221579</p>
+            <p>
+              <strong>Alamat:</strong> Jl.Cabe Hijau 68 Bojong Indah Rawa Buaya
+              Cengkareng
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7752730865327!2d106.73937577475007!3d-6.160844793826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7948f45101f%3A0x89f2db0a9de36aa8!2sJl.%20Cabe%20Hijau%20No.68%2C%20RT.5%2FRW.11%2C%20Rw.%20Buaya%2C%20Kecamatan%20Cengkareng%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011740!5e0!3m2!1sid!2sid!4v1751375303052!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Brand -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold">Sinar Marmer</h5>
+            <p class="small text-muted">
+              Penyedia & spesialis pemasangan marmer berkualitas di Indonesia.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-semibold">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-white-50 text-decoration-none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="/about.html" class="text-white-50 text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/products.html"
+                  class="text-white-50 text-decoration-none"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#layanan" class="text-white-50 text-decoration-none"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/gallery.html"
+                  class="text-white-50 text-decoration-none"
+                  >Galeri</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-white-50 text-decoration-none"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Hubungi Kami</h6>
+            <p class="small text-muted mb-1">
+              Telepon 1:
+              <a href="tel:+628123456789" class="text-white-50">
+                081211460051
+              </a>
+            </p>
+            <p class="small text-muted mb-1">
+              Telepon 2:
+              <a href="tel:+628223456789" class="text-white-50">
+                085695221579
+              </a>
+            </p>
+            <p class="small text-muted">
+              Jl. Cabe Hijau 68 Bojong Indah Rawa Buaya Cengkareng
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25 mt-4" />
+
+        <div class="text-center small text-white-50">
+          &copy; 2025 <strong>Sinar Marmer</strong>. Semua Hak Dilindungi.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

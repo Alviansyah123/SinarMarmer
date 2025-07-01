@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lihat katalog marmer lokal dan impor kami, serta layanan instalasi dan perawatan marmer."
+    />
+    <title>Produk & Layanan | MarmerIndo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-custom shadow-sm mx-3 my-3 px-3 py-2"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-marmer" href="index.html">
+          Sinar Marmer</a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar top-bar"></span>
+          <span class="bar bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTopBtn" title="Kembali ke atas">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button (2 Kontak) -->
+    <div class="wa-floating-menu">
+      <button
+        class="wa-main-btn"
+        id="waMenuToggle"
+        title="Hubungi via WhatsApp"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </button>
+
+      <div class="wa-options" id="waContactOptions">
+        <a
+          href="https://wa.me/6281211460051"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 1
+        </a>
+        <a
+          href="https://wa.me/6285695221579"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 2
+        </a>
+      </div>
+    </div>
+
+    <!-- Produk -->
+    <main>
+      <section class="container pt-navbar my-5">
+        <div class="text-center mb-4">
+          <h2>Kategori Produk</h2>
+          <div
+            class="d-flex flex-wrap justify-content-center gap-2 mt-3"
+            id="categoryButtons"
+          >
+            <button class="category-btn active" data-filter="all">Semua</button>
+            <button class="category-btn" data-filter="lantai">Lantai</button>
+            <button class="category-btn" data-filter="dinding">Dinding</button>
+            <button class="category-btn" data-filter="meja">Meja</button>
+            <button class="category-btn" data-filter="toilet">Toilet</button>
+            <button class="category-btn" data-filter="eksterior">
+              Eksterior
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="productGallery">
+          <!-- Kategori: Lantai -->
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="lantai"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/lantai1.jpg"
+                class="card-img-top"
+                alt="Marmer Lantai 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Lantai Elegan</h5>
+                <p class="text-muted mb-1">Rp1.200.000 /m²</p>
+                <p class="card-text">
+                  Tampilan mengkilap dengan warna netral, cocok untuk ruangan
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="lantai"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/lantai2.jpg"
+                class="card-img-top"
+                alt="Marmer Lantai 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Lantai Natural</h5>
+                <p class="text-muted mb-1">Rp950.000 /m²</p>
+                <p class="card-text">
+                  Motif alami batu asli, memberikan kesan hangat dan elegan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="lantai"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/lantai3.jpg"
+                class="card-img-top"
+                alt="Marmer Lantai 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Lantai Premium</h5>
+                <p class="text-muted mb-1">Rp1.450.000 /m²</p>
+                <p class="card-text">
+                  Cocok untuk hunian eksklusif dengan permukaan halus dan tahan
+                  lama.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Dinding -->
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="dinding"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/dinding1.jpg"
+                class="card-img-top"
+                alt="Marmer Dinding 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Dinding Mewah</h5>
+                <p class="text-muted mb-1">Rp1.000.000 /m²</p>
+                <p class="card-text">
+                  Pilihan terbaik untuk dekorasi dinding elegan dan tahan lama.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="dinding"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/dinding2.jpg"
+                class="card-img-top"
+                alt="Marmer Dinding 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Dinding Grey</h5>
+                <p class="text-muted mb-1">Rp890.000 /m²</p>
+                <p class="card-text">
+                  Warna abu modern yang cocok untuk interior minimalis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="dinding"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/dinding3.jpg"
+                class="card-img-top"
+                alt="Marmer Dinding 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Dinding Classic</h5>
+                <p class="text-muted mb-1">Rp970.000 /m²</p>
+                <p class="card-text">
+                  Motif klasik dengan sentuhan warna krem lembut.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Meja -->
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="meja"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/meja1.jpg"
+                class="card-img-top"
+                alt="Marmer Meja 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meja Marmer Putih</h5>
+                <p class="text-muted mb-1">Rp3.500.000</p>
+                <p class="card-text">
+                  Permukaan putih bersih dengan finishing glossy elegan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="meja"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/meja2.jpg"
+                class="card-img-top"
+                alt="Marmer Meja 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meja Marmer Hitam</h5>
+                <p class="text-muted mb-1">Rp3.200.000</p>
+                <p class="card-text">
+                  Marmer hitam pekat dengan aksen keemasan yang mewah.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="meja"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/meja3.jpg"
+                class="card-img-top"
+                alt="Marmer Meja 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meja Marmer Minimalis</h5>
+                <p class="text-muted mb-1">Rp2.900.000</p>
+                <p class="card-text">
+                  Desain ringkas dengan permukaan kuat dan tahan noda.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Toilet -->
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="toilet"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/toilet1.jpg"
+                class="card-img-top"
+                alt="Marmer Toilet 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dinding Toilet Premium</h5>
+                <p class="text-muted mb-1">Rp1.100.000 /m²</p>
+                <p class="card-text">
+                  Tahan lembab dan mudah dibersihkan, cocok untuk kamar mandi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="toilet"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/toilet2.jpg"
+                class="card-img-top"
+                alt="Marmer Toilet 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lantai Toilet Elegan</h5>
+                <p class="text-muted mb-1">Rp1.050.000 /m²</p>
+                <p class="card-text">
+                  Anti licin dan memberikan kesan bersih pada toilet Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="toilet"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/toilet3.jpg"
+                class="card-img-top"
+                alt="Marmer Toilet 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Panel Toilet Minimalis</h5>
+                <p class="text-muted mb-1">Rp980.000 /m²</p>
+                <p class="card-text">
+                  Warna netral cocok untuk toilet hotel atau rumah modern.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kategori: Eksterior -->
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="eksterior"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/eksterior1.jpg"
+                class="card-img-top"
+                alt="Marmer Eksterior 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Dinding Taman</h5>
+                <p class="text-muted mb-1">Rp1.000.000 /m²</p>
+                <p class="card-text">
+                  Tahan cuaca, cocok untuk eksterior taman dan dinding luar
+                  rumah.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="eksterior"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/eksterior2.jpg"
+                class="card-img-top"
+                alt="Marmer Eksterior 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Fasad Bangunan</h5>
+                <p class="text-muted mb-1">Rp1.250.000 /m²</p>
+                <p class="card-text">
+                  Menambah estetika bangunan dengan kesan kokoh dan megah.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 product-item"
+            data-category="eksterior"
+          >
+            <div class="card shadow-sm h-100">
+              <img
+                src="img/produk/eksterior3.jpg"
+                class="card-img-top"
+                alt="Marmer Eksterior 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Marmer Pilar Teras</h5>
+                <p class="text-muted mb-1">Rp1.100.000 /m²</p>
+                <p class="card-text">
+                  Memberikan kesan mewah dan tahan terhadap perubahan cuaca.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Brand -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold">Sinar Marmer</h5>
+            <p class="small text-muted">
+              Penyedia & spesialis pemasangan marmer berkualitas di Indonesia.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-semibold">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-white-50 text-decoration-none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="/about.html" class="text-white-50 text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/products.html"
+                  class="text-white-50 text-decoration-none"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#layanan" class="text-white-50 text-decoration-none"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/gallery.html"
+                  class="text-white-50 text-decoration-none"
+                  >Galeri</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-white-50 text-decoration-none"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Hubungi Kami</h6>
+            <p class="small text-muted mb-1">
+              Telepon 1:
+              <a href="tel:+628123456789" class="text-white-50">
+                081211460051
+              </a>
+            </p>
+            <p class="small text-muted mb-1">
+              Telepon 2:
+              <a href="tel:+628223456789" class="text-white-50">
+                085695221579
+              </a>
+            </p>
+            <p class="small text-muted">
+              Jl. Cabe Hijau 68 Bojong Indah Rawa Buaya Cengkareng
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25 mt-4" />
+
+        <div class="text-center small text-white-50">
+          &copy; 2025 <strong>Sinar Marmer</strong>. Semua Hak Dilindungi.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/products.js"></script>
+  </body>
+</html>

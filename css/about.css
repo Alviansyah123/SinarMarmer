@@ -1,0 +1,120 @@
+/* about.css - Halaman Tentang Kami */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* about.css - Halaman Tentang Kami */
+
+.about-section {
+  padding: 3rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.about-section h1 {
+  color: #b2956c;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-section h3 {
+  font-weight: 600;
+  color: #b2956c;
+  font-size: 1.5rem;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.about-section ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-section ul li::before {
+  content: "\f058"; /* FontAwesome check-circle */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #198754;
+  font-size: 1.1rem;
+}
+
+/* Card */
+.about-section .card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Gambar */
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* AOS Animasi Smooth */
+[data-aos] {
+  transition: all 0.7s ease-in-out !important;
+}
+
+.footer a,
+.footer p,
+.footer small {
+  color: #e0e0e0 !important;
+}
+
+.footer a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer h5,
+  .footer h6 {
+    text-align: center;
+  }
+
+  .footer ul,
+  .footer p {
+    text-align: center !important;
+  }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lihat katalog marmer lokal dan impor kami, serta layanan instalasi dan perawatan marmer."
+    />
+    <title>Produk & Layanan | MarmerIndo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layanan.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-custom shadow-sm mx-3 my-3 px-3 py-2"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-marmer" href="index.html">
+          Sinar Marmer</a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar top-bar"></span>
+          <span class="bar bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTopBtn" title="Kembali ke atas">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button (2 Kontak) -->
+    <div class="wa-floating-menu">
+      <button
+        class="wa-main-btn"
+        id="waMenuToggle"
+        title="Hubungi via WhatsApp"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </button>
+
+      <div class="wa-options" id="waContactOptions">
+        <a
+          href="https://wa.me/6281211460051"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 1
+        </a>
+        <a
+          href="https://wa.me/6285695221579"
+          target="_blank"
+          class="wa-option-item"
+        >
+          <i class="bi bi-whatsapp"></i> Admin 2
+        </a>
+      </div>
+    </div>
+
+    <!-- Layanan -->
+    <main>
+      <section class="container-layanan my-5" id="layanan">
+        <div class="text-center mb-4">
+          <h2>Layanan Kami</h2>
+          <hr
+            class="mx-auto mb-5"
+            style="
+              width: 80px;
+              height: 4px;
+              background-color: #b2956c;
+              opacity: 1;
+              border: none;
+            "
+          />
+          <p class="text-muted">
+            Kami menyediakan berbagai layanan profesional untuk memenuhi
+            kebutuhan marmer Anda, mulai dari desain, pemasangan, hingga
+            perawatan menyeluruh.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Layanan: Pemasangan Marmer -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Pemasangan Marmer</h5>
+                <p class="text-muted">
+                  Mulai dari <strong>Rp250.000 /m²</strong>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Paket Standar: Marmer lokal + pemasangan</li>
+                  <li>✅ Paket Premium: Marmer impor + presisi tinggi</li>
+                  <li>✅ Termasuk pemotongan & finishing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan: Poles & Perawatan -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Poles & Perawatan</h5>
+                <p class="text-muted">
+                  Mulai dari <strong>Rp80.000 /m²</strong>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Paket Reguler: Poles dasar & pembersihan</li>
+                  <li>
+                    ✅ Paket Deep Clean: Anti-noda, glossy, dan proteksi UV
+                  </li>
+                  <li>✅ Layanan berkala untuk area publik</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan: Desain Interior -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Desain Interior Berbasis Marmer</h5>
+                <p class="text-muted">
+                  Mulai dari <strong>Rp1.500.000 /ruangan</strong>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Paket Basic: Layout & palet warna</li>
+                  <li>✅ Paket 3D: Desain visual + konsultasi RAB</li>
+                  <li>✅ Disesuaikan dengan tema rumah/komersial</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan: Custom Meja Marmer -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Pembuatan Meja Custom</h5>
+                <p class="text-muted">
+                  Mulai dari <strong>Rp2.800.000</strong>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Pilihan bentuk & ukuran fleksibel</li>
+                  <li>✅ Paket Solid, Hollow, dan Inlay</li>
+                  <li>✅ Termasuk pemasangan di lokasi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan: Dinding & Fasad -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Pemasangan Dinding & Fasad</h5>
+                <p class="text-muted">
+                  Mulai dari <strong>Rp300.000 /m²</strong>
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Interior & eksterior (tahan cuaca)</li>
+                  <li>✅ Paket Natural Look & Modern Polished</li>
+                  <li>✅ Cocok untuk kantor, hotel, rumah mewah</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layanan: Konsultasi & Survey -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Konsultasi & Survey Lokasi</h5>
+                <p class="text-muted">
+                  <strong>Gratis</strong> untuk area Jabodetabek
+                </p>
+                <ul class="list-unstyled small">
+                  <li>✅ Survey lokasi & pengukuran</li>
+                  <li>✅ Diskusi kebutuhan & budget</li>
+                  <li>✅ Estimasi waktu dan biaya proyek</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Brand -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="fw-bold">Sinar Marmer</h5>
+            <p class="small text-muted">
+              Penyedia & spesialis pemasangan marmer berkualitas di Indonesia.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-semibold">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-white-50 text-decoration-none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="/about.html" class="text-white-50 text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/products.html"
+                  class="text-white-50 text-decoration-none"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#layanan" class="text-white-50 text-decoration-none"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/gallery.html"
+                  class="text-white-50 text-decoration-none"
+                  >Galeri</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-white-50 text-decoration-none"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kontak -->
+          <div class="col-md-4">
+            <h6 class="fw-semibold">Hubungi Kami</h6>
+            <p class="small text-muted mb-1">
+              Telepon 1:
+              <a href="tel:+628123456789" class="text-white-50">
+                081211460051
+              </a>
+            </p>
+            <p class="small text-muted mb-1">
+              Telepon 2:
+              <a href="tel:+628223456789" class="text-white-50">
+                085695221579
+              </a>
+            </p>
+            <p class="small text-muted">
+              Jl. Cabe Hijau 68 Bojong Indah Rawa Buaya Cengkareng
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25 mt-4" />
+
+        <div class="text-center small text-white-50">
+          &copy; 2025 <strong>Sinar Marmer</strong>. Semua Hak Dilindungi.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/layanan.js"></script>
+  </body>
+</html>
