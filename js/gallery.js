@@ -23,3 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const buttons = document.querySelectorAll(".category-btn");
+const items = document.querySelectorAll(".gallery-item");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Hapus class active di semua tombol
+    buttons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filter = btn.getAttribute("data-filter");
+    items.forEach((item) => {
+      if (filter === "all" || item.getAttribute("data-category") === filter) {
+        item.style.display = "block";
+        item.classList.add("visible");
+      } else {
+        item.style.display = "none";
+        item.classList.remove("visible");
+      }
+    });
+  });
+});
+
+// Tampilkan semua item pertama kali
+window.addEventListener("DOMContentLoaded", () => {
+  items.forEach((item) => item.classList.add("visible"));
+});

@@ -104,50 +104,106 @@
     </button>
 
     <main>
-      <section class="gallery-section">
-        <h1 class="gallery-title">Galeri Sinar Marmer</h1>
+      <section class="gallery-section container my-5">
+        <h1 class="gallery-title text-center mb-4">Galeri Sinar Marmer</h1>
+
+        <!-- Tombol Kategori -->
+        <div
+          class="d-flex flex-column align-items-center mb-4"
+          id="categoryButtons"
+        >
+          <!-- Tombol "Semua" -->
+          <div class="w-100 mb-2">
+            <button class="category-btn w-100 active" data-filter="all">
+              Semua
+            </button>
+          </div>
+          <!-- Tombol "Lantai" dan "Meja" -->
+          <div class="d-flex flex-wrap justify-content-center gap-2 w-100">
+            <button class="category-btn flex-fill" data-filter="lantai">
+              Lantai
+            </button>
+            <button class="category-btn flex-fill" data-filter="meja">
+              Meja
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Galeri -->
         <div class="gallery-grid">
-          <div class="gallery-item wide">
-            <img src="img/gallery/gallery1.png" alt="Foto 1" />
+          <!-- Kategori: Lantai -->
+          <div class="gallery-item wide" data-category="lantai">
+            <img src="img/gallery/gallery1.png" alt="Lantai 1" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery2.png" alt="Foto 2" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery2.png" alt="Lantai 2" />
           </div>
-          <div class="gallery-item tall">
-            <img src="img/gallery/gallery3.png" alt="Foto 3" />
+          <div class="gallery-item tall" data-category="lantai">
+            <img src="img/gallery/gallery3.png" alt="Lantai 3" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery4.jpg" alt="Foto 4" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery4.jpg" alt="Lantai 4" />
           </div>
-          <div class="gallery-item wide">
-            <img src="img/gallery/gallery5.png" alt="Foto 5" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery6.png" alt="Lantai 5" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery6.png" alt="Foto 6" />
+          <div class="gallery-item tall" data-category="lantai">
+            <img src="img/gallery/gallery7.png" alt="lantai 6" />
           </div>
-          <div class="gallery-item tall">
-            <img src="img/gallery/gallery7.png" alt="Foto 7" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery8.png" alt="lantai 7" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery8.png" alt="Foto 8" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery9.png" alt="lantai 8" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery9.png" alt="Foto 9" />
+          <div class="gallery-item wide" data-category="lantai">
+            <img src="img/gallery/gallery10.png" alt="lantai 9" />
           </div>
-          <div class="gallery-item wide">
-            <img src="img/gallery/gallery10.png" alt="Foto 10" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery11.png" alt="lantai 10" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery11.png" alt="Foto 11" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery12.png" alt="lantai 11" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery12.png" alt="Foto 12" />
+          <div class="gallery-item" data-category="lantai">
+            <img src="img/gallery/gallery13.png" alt="lantai 12" />
           </div>
-          <div class="gallery-item">
-            <img src="img/gallery/gallery13.png" alt="Foto 13" />
+          <div class="gallery-item wide" data-category="lantai">
+            <img src="img/gallery/gallery14.png" alt="lantai 13" />
           </div>
-          <div class="gallery-item wide">
-            <img src="img/gallery/gallery14.png" alt="Foto 14" />
+          <div class="gallery-item wide" data-category="lantai">
+            <img src="img/gallery/gallery15.png" alt="lantai 14" />
+          </div>
+          <!-- Kategori: Meja -->
+          <div class="gallery-item" data-category="meja">
+            <img src="img/gallery/gallery16.png" alt="meja 1" />
+          </div>
+          <div class="gallery-item tall" data-category="meja">
+            <img src="img/gallery/gallery17.png" alt="Meja 2" />
+          </div>
+          <div class="gallery-item" data-category="meja">
+            <img src="img/gallery/gallery18.png" alt="meja 3" />
+          </div>
+          <div class="gallery-item wide" data-category="meja">
+            <img src="img/gallery/gallery19.png" alt="meja 4" />
+          </div>
+          <div class="gallery-item tall" data-category="meja">
+            <img src="img/gallery/gallery20.png" alt="Meja 5" />
+          </div>
+          <div class="gallery-item" data-category="meja">
+            <img src="img/gallery/gallery21.png" alt="meja 6" />
+          </div>
+          <div class="gallery-item" data-category="meja">
+            <img src="img/gallery/gallery22.png" alt="meja 7" />
+          </div>
+          <div class="gallery-item" data-category="meja">
+            <img src="img/gallery/gallery23.png" alt="Meja 8" />
+          </div>
+          <div class="gallery-item wide" data-category="meja">
+            <img src="img/gallery/gallery24.png" alt="meja 9" />
+          </div>
+          <div class="gallery-item wide" data-category="meja">
+            <img src="img/gallery/gallery25.png" alt="meja 10" />
           </div>
         </div>
       </section>
@@ -183,37 +239,42 @@
                 >
               </li>
               <li>
-                <a href="/about.html" class="text-white-50 text-decoration-none"
+                <a
+                  href="./about.html"
+                  class="text-white-50 text-decoration-none"
                   >Tentang Kami</a
                 >
               </li>
               <li>
                 <a
-                  href="/products.html"
+                  href="./products.html"
                   class="text-white-50 text-decoration-none"
                   >Produk</a
                 >
               </li>
               <li>
-                <a href="#layanan" class="text-white-50 text-decoration-none"
+                <a
+                  href="./layanan.html"
+                  class="text-white-50 text-decoration-none"
                   >Layanan</a
                 >
               </li>
               <li>
                 <a
-                  href="/gallery.html"
+                  href="./gallery.html"
                   class="text-white-50 text-decoration-none"
                   >Galeri</a
                 >
               </li>
               <li>
-                <a href="#kontak" class="text-white-50 text-decoration-none"
+                <a
+                  href="./contact.html"
+                  class="text-white-50 text-decoration-none"
                   >Kontak</a
                 >
               </li>
             </ul>
           </div>
-
           <!-- Kontak -->
           <div class="col-md-4">
             <h6 class="fw-semibold">Hubungi Kami</h6>

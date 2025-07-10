@@ -21,6 +21,24 @@
   grid-auto-flow: dense;
 }
 
+/* Tombol kategori galeri */
+.category-btn {
+  background-color: #b2956c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background-color: #a08254;
+  transform: translateY(-2px);
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -50,18 +68,16 @@
   grid-row: span 2;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-auto-rows: 160px;
-  }
+/* Animasi muncul item */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
 
-  .gallery-item.wide,
-  .gallery-item.tall {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Lightbox */
@@ -96,4 +112,34 @@
 
 .close-lightbox:hover {
   transform: scale(1.2);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 160px;
+  }
+
+  .gallery-item.wide,
+  .gallery-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* Responsive buttons untuk mobile */
+@media (max-width: 576px) {
+  #categoryButtons > div:first-child .category-btn {
+    width: 100%;
+  }
+
+  #categoryButtons > div:last-child {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  #categoryButtons > div:last-child .category-btn {
+    flex: 1 1 0;
+  }
 }
